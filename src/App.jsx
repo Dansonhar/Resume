@@ -1,25 +1,4 @@
 import { useEffect, useState } from "react";
-import {
-  SiReact,
-  SiJavascript,
-  SiDocker,
-  SiGithub,
-  SiFigma,
-  SiAutodeskmaya,
-} from "react-icons/si";
-import {
-  TbBrandVscode,
-  TbBrandAdobePhotoshop,
-  TbBrandAdobeIllustrator,
-  TbCube,
-} from "react-icons/tb";
-import {
-  LuBrainCircuit,
-  LuCode,
-  LuLayoutDashboard,
-  LuBrush,
-  LuSun,
-} from "react-icons/lu";
 import "./App.css";
 
 const BASE = import.meta.env.BASE_URL; // "/Resume/" in prod, "/" in dev
@@ -149,25 +128,6 @@ const EXPERIENCE = [
   },
 ];
 
-// "What I Do" capability grid — icons from react-icons.
-const CAPABILITIES = [
-  { label: "AI Development", Icon: LuBrainCircuit },
-  { label: "Web Development", Icon: LuCode },
-  { label: "React", Icon: SiReact },
-  { label: "JavaScript", Icon: SiJavascript },
-  { label: "VS Code", Icon: TbBrandVscode },
-  { label: "Docker", Icon: SiDocker },
-  { label: "GitHub", Icon: SiGithub },
-  { label: "UI/UX Design", Icon: LuLayoutDashboard },
-  { label: "Figma", Icon: SiFigma },
-  { label: "Photoshop", Icon: TbBrandAdobePhotoshop },
-  { label: "Illustrator", Icon: TbBrandAdobeIllustrator },
-  { label: "3D Modeling", Icon: TbCube },
-  { label: "Maya", Icon: SiAutodeskmaya },
-  { label: "Substance Painter", Icon: LuBrush },
-  { label: "3D Rendering", Icon: LuSun },
-];
-
 const SOFT_SKILLS = [
   "Adapts to new working environments easily",
   "Able to socialize with new people",
@@ -265,24 +225,6 @@ function Lightbox({ item, onClose }) {
   );
 }
 
-function WhatIDo() {
-  return (
-    <section className="whatido">
-      <h2 className="section-title">What I Do</h2>
-      <div className="cap-grid">
-        {CAPABILITIES.map(({ label, Icon }) => (
-          <div className="cap-card" key={label}>
-            <span className="cap-icon" aria-hidden>
-              <Icon />
-            </span>
-            <span className="cap-label">{label}</span>
-          </div>
-        ))}
-      </div>
-    </section>
-  );
-}
-
 function Sidebar() {
   return (
     <aside className="sidebar">
@@ -363,8 +305,6 @@ export default function App() {
           <Avatar name={CONTACT.name} photo={CONTACT.photo} />
         </div>
       </header>
-
-      <WhatIDo />
 
       <main className="layout">
         <section className="main-col">
