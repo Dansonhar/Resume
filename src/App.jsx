@@ -9,6 +9,9 @@ const CONTACT = {
   phone: "+60 19 473 2520",
   email: "Dansonhar8@gmail.com",
   portfolio: "https://dansonhar.github.io/danson_portfolio/",
+  // Save your photo as public/profile.jpg (or set another filename here).
+  // Falls back to the "DH" monogram if the file isn't present.
+  photo: "profile.jpg",
 };
 
 // To add photos: drop files into public/work/<slug>/ and list them in `photos`.
@@ -146,6 +149,30 @@ const SOFTWARE_SKILLS = [
   "Docker",
 ];
 
+function Avatar({ name, photo }) {
+  const [failed, setFailed] = useState(false);
+  const initials = name
+    .split(" ")
+    .map((w) => w[0])
+    .join("");
+
+  if (photo && !failed) {
+    return (
+      <img
+        className="avatar avatar-img"
+        src={`${BASE}${photo}`}
+        alt={name}
+        onError={() => setFailed(true)}
+      />
+    );
+  }
+  return (
+    <div className="avatar" aria-label={name}>
+      {initials}
+    </div>
+  );
+}
+
 function Gallery({ slug, photos, onOpen }) {
   if (!photos || photos.length === 0) return null;
   return (
@@ -235,11 +262,6 @@ function Sidebar() {
 export default function App() {
   const [lightbox, setLightbox] = useState(null);
 
-  const initials = CONTACT.name
-    .split(" ")
-    .map((w) => w[0])
-    .join("");
-
   return (
     <div className="page">
       <header className="hero">
@@ -279,9 +301,7 @@ export default function App() {
             </div>
           </div>
 
-          <div className="avatar" aria-label={CONTACT.name}>
-            {initials}
-          </div>
+          <Avatar name={CONTACT.name} photo={CONTACT.photo} />
         </div>
       </header>
 

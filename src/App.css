@@ -114,6 +114,11 @@
   box-shadow: 0 12px 40px -12px rgba(52, 211, 153, 0.7);
 }
 
+.avatar-img {
+  object-fit: cover;
+  background: var(--panel);
+}
+
 /* ---------- Layout ---------- */
 .layout {
   display: grid;
