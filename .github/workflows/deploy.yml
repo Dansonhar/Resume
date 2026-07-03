@@ -36,6 +36,10 @@ jobs:
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
+        with:
+          # Switch the Pages source to "GitHub Actions" automatically
+          # (fixes the blank page caused by branch-based deploy).
+          enablement: true
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
