@@ -100,8 +100,8 @@
 
 .avatar {
   flex-shrink: 0;
-  width: 128px;
-  height: 128px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   display: grid;
   place-items: center;
@@ -416,8 +416,8 @@
     padding: 28px 22px;
   }
   .avatar {
-    width: 96px;
-    height: 96px;
+    width: 200px;
+    height: 200px;
     font-size: 32px;
   }
 }

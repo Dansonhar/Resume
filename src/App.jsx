@@ -143,6 +143,7 @@ const SOFTWARE_SKILLS = [
   "Substance Painter",
   "Adobe Photoshop",
   "Adobe Illustrator",
+  "Figma",
   "Visual Studio Code",
   "Antigravity",
   "GitHub",
