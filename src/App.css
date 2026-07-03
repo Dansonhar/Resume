@@ -9,10 +9,10 @@
   border-radius: 20px;
   padding: 40px 44px;
   background:
-    linear-gradient(135deg, rgba(16, 185, 129, 0.14), transparent 55%),
-    linear-gradient(180deg, #16261e, #0e1712);
+    linear-gradient(135deg, rgba(184, 255, 43, 0.1), transparent 55%),
+    linear-gradient(180deg, #161616, #101010);
   border: 1px solid var(--border);
-  box-shadow: 0 20px 60px -30px rgba(16, 185, 129, 0.4);
+  box-shadow: 0 20px 60px -30px rgba(184, 255, 43, 0.3);
   position: relative;
   overflow: hidden;
 }
@@ -23,7 +23,7 @@
   inset: 0;
   background: radial-gradient(
     600px 200px at 100% 0,
-    rgba(74, 222, 128, 0.12),
+    rgba(184, 255, 43, 0.1),
     transparent 70%
   );
   pointer-events: none;
@@ -45,7 +45,7 @@
   text-transform: uppercase;
   color: var(--green);
   border: 1px solid var(--border);
-  background: rgba(52, 211, 153, 0.08);
+  background: rgba(184, 255, 43, 0.08);
   padding: 5px 12px;
   border-radius: 999px;
   margin-bottom: 18px;
@@ -108,10 +108,10 @@
   font-size: 42px;
   font-weight: 800;
   letter-spacing: 0.02em;
-  color: #06110c;
+  color: #0b0b0b;
   background: linear-gradient(140deg, var(--green-bright), var(--green-deep));
   border: 3px solid rgba(255, 255, 255, 0.12);
-  box-shadow: 0 12px 40px -12px rgba(52, 211, 153, 0.7);
+  box-shadow: 0 12px 40px -12px rgba(184, 255, 43, 0.6);
 }
 
 .avatar-img {
@@ -167,7 +167,7 @@
   height: 12px;
   border-radius: 50%;
   background: var(--green);
-  box-shadow: 0 0 0 4px rgba(52, 211, 153, 0.15);
+  box-shadow: 0 0 0 4px rgba(184, 255, 43, 0.15);
 }
 
 .job-head {
@@ -244,7 +244,7 @@
 .thumb:hover {
   transform: translateY(-2px);
   border-color: var(--green);
-  box-shadow: 0 10px 26px -14px rgba(52, 211, 153, 0.7);
+  box-shadow: 0 10px 26px -14px rgba(184, 255, 43, 0.6);
 }
 
 .thumb img {
@@ -262,7 +262,7 @@
   display: grid;
   place-items: center;
   padding: 24px;
-  background: rgba(5, 9, 7, 0.86);
+  background: rgba(0, 0, 0, 0.82);
   backdrop-filter: blur(4px);
   animation: fade 0.15s ease;
 }
@@ -321,7 +321,7 @@
 .lightbox-close:hover {
   background: var(--green-deep);
   border-color: var(--green);
-  color: #06110c;
+  color: #0b0b0b;
 }
 
 /* ---------- Sidebar ---------- */
@@ -377,7 +377,7 @@
   font-size: 13.5px;
   font-weight: 500;
   color: var(--heading);
-  background: rgba(52, 211, 153, 0.1);
+  background: rgba(184, 255, 43, 0.1);
   border: 1px solid var(--border);
   padding: 6px 13px;
   border-radius: 999px;
