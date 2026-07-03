@@ -19,10 +19,7 @@ const EXPERIENCE = [
     company: "Crave Asia",
     period: "October 2025 – July 2026",
     slug: "crave-asia-support",
-    photos: [
-      { file: "photo1.svg", caption: "Sample — replace with your photo" },
-      { file: "photo2.svg", caption: "Sample — replace with your photo" },
-    ],
+    photos: [],
     points: [
       "Assisted in designing digital assets using Adobe Photoshop and AI-powered creative tools.",
       "Developed and optimized AI prompts for image generation, content creation, and workflow automation.",
@@ -51,9 +48,7 @@ const EXPERIENCE = [
     company: "Crave Asia",
     period: "September 2024 – November 2024",
     slug: "crave-asia-intern",
-    photos: [
-      { file: "photo1.svg", caption: "Sample — replace with your photo" },
-    ],
+    photos: [],
     points: [
       "Designed 3D assets for product visualization.",
       "Collaborated with teams to ensure brand consistency and creative alignment.",

@@ -31,5 +31,4 @@ matching folder, then list the filenames in `src/App.jsx` under that job's
 3. Save. In dev (`npm run dev`) it appears instantly; on push it deploys.
 
 Supported formats: `.jpg`, `.jpeg`, `.png`, `.webp`, `.gif`, `.svg`.
-The `.svg` files currently in `crave-asia-support/` and `crave-asia-intern/`
-are demo placeholders — delete them once you add real photos.
+Every job folder is currently empty — no photos show until you add your own.
